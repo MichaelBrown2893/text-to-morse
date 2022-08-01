@@ -6,9 +6,7 @@ morse-to-text application
 This file can also be imported as a module and contains the following
 functions:
 
-    * print_title - prints ascii art for the app title
-    * print_welcome_message - prints welcome message
-    * print_instructions - prints instructions for using the app
+    * display_onboarding - Displays all onboarding information for the app
 """
 
 from . import onboarding_model
@@ -22,7 +20,7 @@ def display_onboarding():
 
 def __display_title():
     """Displays the title of the app"""
-    print(onboarding_model.TITLE)
+    print(onboarding_model.TITLE_ASCII)
 
 
 def __display_welcome_message():

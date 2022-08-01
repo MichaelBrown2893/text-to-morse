@@ -11,7 +11,7 @@ class OnboardingTest(unittest.TestCase):
         sys.stdout = captured_output
         onboarding_presenter.display_onboarding()
         sys.stdout = sys.__stdout__
-        expected = f"{onboarding_model.TITLE}\n" \
+        expected = f"{onboarding_model.TITLE_ASCII}\n" \
                    f"{onboarding_model.WELCOME_MESSAGE}\n" \
                    f"{onboarding_model.INSTRUCTIONS}\n"
         self.assertEqual(captured_output.getvalue(), expected)
